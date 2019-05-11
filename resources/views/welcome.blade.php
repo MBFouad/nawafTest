@@ -59,7 +59,7 @@
         <table class="table">
             <tr>
                 <th>Amount</th>
-                <td>{{$cart->getCoupon()->getAmount().($cart->getCoupon()->getType()=='percentage')?'%':' SAR'}}</td>
+                <td>{{$cart->getCoupon()->getAmount().(($cart->getCoupon()->getType()=='percentage')?'%':' SAR')}}</td>
             </tr>
             <tr>
                 <th>Expire Date</th>
